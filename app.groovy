@@ -39,17 +39,19 @@ class DroneAggregator {
         Document doc = Jsoup.connect("http://spring.io/guides").get()
 
         def guides = doc.select("a.guide--title")
-                .findAll{ !it.attr("href").contains("tutorials") }
-                .collect{ [name: "gs-" + (it.attr("href") - "/guides/gs/" - "/"),
-                           href: it.attr("href"),
-                           title: it.text()] }
+                .findAll { !it.attr("href").contains("tutorials") }
+                .collect {
+            [name: "gs-" + (it.attr("href") - "/guides/gs/" - "/"),
+                    href: it.attr("href"),
+                    title: it.text()]
+        }
 
         println guides
 
         // Break them up into chunks of four-per-row
         model.put("chunks", guides.collate(4))
 
-		"home"
+        "home"
     }
 
 }

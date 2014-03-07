@@ -7,6 +7,14 @@
           id="Viewport" name="viewport"/>
     <link href="https://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700" rel="stylesheet"
           type="text/css"/>
+    <style>
+        .blog--container .blog--post.build-status img {
+            padding: 0;
+            margin: 0;
+            width: 150px;
+            height: 100%;
+        }
+    </style>
     <link rel="stylesheet" type="text/css" href="http://spring.io/css/main.css"/>
     <link rel="stylesheet" type="text/css" href="http://spring.io/css/blog.css"/>
 </head>
@@ -45,27 +53,23 @@
         <div class="main-body--wrapper">
             <div class="blog--container">
                 <div class="meta-data--container">
-                    <article class="blog--post">
-                        <div class="row-fluid" th:each="chunk : ${chunks}">
-                            <div class="span3" th:each="guide : ${chunk}">
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <a th:href="@{http://spring.io/__${guide[href]}__}" target="_blank">
-                                                <small th:text="${guide[title]}"></small>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a th:href="@{https://drone.io/github.com/spring-guides/__${guide[name]}__/latest}" target="_blank">
-                                                <img th:src="@{https://drone.io/github.com/spring-guides/__${guide[name]}__/status.png}"/>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
+                    <article class="blog--post build-status">
+                        <table>
+                            <tr th:each="chunk : ${chunks}">
+                                <div th:each="guide : ${chunk}">
+                                <td>
+                                    <a th:href="@{http://spring.io/__${guide[href]}__}" target="_blank">
+                                        <small th:text="${guide[title]}"></small>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a th:href="@{https://drone.io/github.com/spring-guides/__${guide[name]}__/latest}" target="_blank">
+                                        <img th:src="@{https://drone.io/github.com/spring-guides/__${guide[name]}__/status.png}"/>
+                                    </a>
+                                </td>
+                                </div>
+                            </tr>
+                        </table>
                     </article>
                 </div>
             </div>

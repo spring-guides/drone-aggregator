@@ -46,8 +46,6 @@ class DroneAggregator {
                     title: it.text()]
         }
 
-        println guides
-
         // Break them up into chunks of four-per-row
         model.put("chunks", guides.collate(4))
 

@@ -7,14 +7,6 @@
           id="Viewport" name="viewport"/>
     <link href="https://fonts.googleapis.com/css?family=Varela+Round|Montserrat:400,700" rel="stylesheet"
           type="text/css"/>
-    <style>
-        .blog--container .blog--post.build-status img {
-            padding: 0;
-            margin: 0;
-            width: 150px;
-            height: 100%;
-        }
-    </style>
     <link rel="stylesheet" type="text/css" href="http://spring.io/css/main.css"/>
     <link rel="stylesheet" type="text/css" href="http://spring.io/css/blog.css"/>
 </head>
@@ -53,7 +45,7 @@
         <div class="main-body--wrapper">
             <div class="blog--container">
                 <div class="meta-data--container">
-                    <article class="blog--post build-status">
+                    <article class="blog--post">
                         <table>
                             <tr th:each="chunk : ${chunks}">
                                 <div th:each="guide : ${chunk}">

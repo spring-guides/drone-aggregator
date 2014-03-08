@@ -14,31 +14,32 @@ Now you can run the application.
 You should see something like this:
 
 ```
+
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
 ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
   '  |____| .__|_| |_|_| |_\__, | / / / /
  =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::            (v1.0.0.RC1)
+ :: Spring Boot ::            (v1.0.0.RC4)
 
-2014-03-07 21:42:30.452  INFO 35542 --- [       runner-0] o.s.boot.SpringApplication               : Starting application on retina with PID 35542 (/Users/gturnquist/.m2/repository/org/springframework/boot/spring-boot/1.0.0.RC1/spring-boot-1.0.0.RC1.jar started by gturnquist)
-2014-03-07 21:42:30.489  INFO 35542 --- [       runner-0] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73077dab: startup date [Fri Mar 07 21:42:30 CST 2014]; root of context hierarchy
-2014-03-07 21:42:31.386  INFO 35542 --- [       runner-0] .t.TomcatEmbeddedServletContainerFactory : Server initialized with port: 8080
-2014-03-07 21:42:31.596  INFO 35542 --- [       runner-0] o.apache.catalina.core.StandardService   : Starting service Tomcat
-2014-03-07 21:42:31.597  INFO 35542 --- [       runner-0] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.47
-2014-03-07 21:42:31.685  INFO 35542 --- [ost-startStop-1] org.apache.catalina.loader.WebappLoader  : Unknown loader org.springframework.boot.cli.compiler.ExtendedGroovyClassLoader$DefaultScopeParentClassLoader@62b51993 class org.springframework.boot.cli.compiler.ExtendedGroovyClassLoader$DefaultScopeParentClassLoader
-2014-03-07 21:42:31.691  INFO 35542 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2014-03-07 21:42:31.692  INFO 35542 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1205 ms
-2014-03-07 21:42:32.288  INFO 35542 --- [ost-startStop-1] o.apache.tomcat.util.digester.Digester   : TLD skipped. URI: http://www.springframework.org/tags is already defined
-2014-03-07 21:42:32.293  INFO 35542 --- [ost-startStop-1] o.apache.tomcat.util.digester.Digester   : TLD skipped. URI: http://www.springframework.org/tags/form is already defined
-2014-03-07 21:42:34.678  INFO 35542 --- [       runner-0] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2014-03-07 21:42:34.802  INFO 35542 --- [       runner-0] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String io.spring.guide.drone.DroneAggregator.index(java.util.Map<java.lang.String, java.lang.Object>)
-2014-03-07 21:42:34.864  INFO 35542 --- [       runner-0] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2014-03-07 21:42:34.864  INFO 35542 --- [       runner-0] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2014-03-07 21:42:35.055  INFO 35542 --- [       runner-0] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2014-03-07 21:42:35.246  INFO 35542 --- [       runner-0] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port: 8080
-2014-03-07 21:42:35.248  INFO 35542 --- [       runner-0] o.s.boot.SpringApplication               : Started application in 5.129 seconds (JVM running for 7.207)
+2014-03-07 22:22:14.060  INFO 35955 --- [       runner-0] o.s.boot.SpringApplication               : Starting application on retina with PID 35955 (/Users/gturnquist/.m2/repository/org/springframework/boot/spring-boot/1.0.0.RC4/spring-boot-1.0.0.RC4.jar started by gturnquist)
+2014-03-07 22:22:14.100  INFO 35955 --- [       runner-0] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4225f0fd: startup date [Fri Mar 07 22:22:14 CST 2014]; root of context hierarchy
+2014-03-07 22:22:15.136  INFO 35955 --- [       runner-0] .t.TomcatEmbeddedServletContainerFactory : Server initialized with port: 8080
+2014-03-07 22:22:15.452  INFO 35955 --- [       runner-0] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2014-03-07 22:22:15.452  INFO 35955 --- [       runner-0] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.52
+2014-03-07 22:22:15.559  INFO 35955 --- [ost-startStop-1] org.apache.catalina.loader.WebappLoader  : Unknown loader org.springframework.boot.cli.compiler.ExtendedGroovyClassLoader$DefaultScopeParentClassLoader@20dbbc62 class org.springframework.boot.cli.compiler.ExtendedGroovyClassLoader$DefaultScopeParentClassLoader
+2014-03-07 22:22:15.566  INFO 35955 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2014-03-07 22:22:15.566  INFO 35955 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1469 ms
+2014-03-07 22:22:16.008  INFO 35955 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2014-03-07 22:22:16.010  INFO 35955 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2014-03-07 22:22:18.630  INFO 35955 --- [       runner-0] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-03-07 22:22:18.713  INFO 35955 --- [       runner-0] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String io.spring.guide.drone.DroneAggregator.index(java.util.Map<java.lang.String, java.lang.Object>)
+2014-03-07 22:22:18.755  INFO 35955 --- [       runner-0] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-03-07 22:22:18.755  INFO 35955 --- [       runner-0] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-03-07 22:22:18.945  INFO 35955 --- [       runner-0] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2014-03-07 22:22:19.119  INFO 35955 --- [       runner-0] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port: 8080
+2014-03-07 22:22:19.120  INFO 35955 --- [       runner-0] o.s.boot.SpringApplication               : Started application in 5.379 seconds (JVM running for 7.539)
 ```
 
 You can now see the table of CI jobs at <http://localhost:8080>.

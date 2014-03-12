@@ -50,7 +50,7 @@
                             <tr th:each="chunk : ${chunks}">
                                 <div th:each="guide : ${chunk}">
                                 <td>
-                                    <a th:href="@{http://spring.io/__${guide[href]}__}" target="_blank">
+                                    <a th:href="@{http://spring.io__${guide[href]}__}" target="_blank">
                                         <small th:text="${guide[title]}"></small>
                                     </a>
                                 </td>

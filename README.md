@@ -2,7 +2,9 @@ Running more than a handful of CI jobs at http://drone.io? Their usage of screen
 
 drone-aggregator is a [Spring Boot](http://projects.spring.io/spring-boot/) application that uses [Jsoup](http://jsoup.org) to elegantly grab every [Getting Started Guide](http://spring.io/guides) and construct a slim and trim table with links to each guide as well as its corresponding drone.io job.
 
-> **NOTE:** See http://bit.ly/app-mgmt-tools-with-boot for a webinar that walks through this code.
+> **NOTE:** See http://bit.ly/app-mgmt-tools-with-boot for a webinar that walks through this app.
+
+[![Webinar showing this app](http://i.ytimg.com/vi/j3rrqOV68ik/mqdefault.jpg)](http://bit.ly/app-mgmt-tools-with-boot)
 
 ## Getting Started
 

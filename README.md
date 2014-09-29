@@ -2,6 +2,8 @@ Running more than a handful of CI jobs at http://drone.io? Their usage of screen
 
 drone-aggregator is a [Spring Boot](http://projects.spring.io/spring-boot/) application that uses [Jsoup](http://jsoup.org) to elegantly grab every [Getting Started Guide](http://spring.io/guides) and construct a slim and trim table with links to each guide as well as its corresponding drone.io job.
 
+> **NOTE:** See http://bit.ly/app-mgmt-tools-with-boot for a webinar that walks through this code.
+
 ## Getting Started
 
 You first need to [install Spring Boot](https://github.com/spring-projects/spring-boot#installing-the-cli). I won't show that here because the instructions behind that link are pretty detailed. I'll just assume you got things set up right.

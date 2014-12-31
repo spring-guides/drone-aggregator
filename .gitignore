@@ -1,3 +1,8 @@
 .idea
 *.iml
 application.properties
+bower_components
+*.css
+.sass-cache
+*.css.map
+*.jar

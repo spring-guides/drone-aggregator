@@ -1,0 +1,24 @@
+{
+  "name": "drone-aggregator",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gregturn/drone-aggregator",
+  "authors": [
+    "Greg Turnquist <gturnquist@pivotal.io>"
+  ],
+  "license": "ASLv2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "inuit-starter-kit": "~0.2.8",
+    "inuit-layout": "~0.3.2",
+    "inuit-widths-responsive": "~0.1.3",
+    "inuit-buttons": "~0.4.1",
+    "inuit-box": "~0.4.4",
+    "inuit-flag": "~0.3.2"
+  }
+}

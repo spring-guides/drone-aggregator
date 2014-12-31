@@ -21,6 +21,8 @@ package io.spring.guide.drone
 import org.jsoup.nodes.Document
 import org.jsoup.Jsoup
 
+@GrabResolver(name='wro4j', root='http://dl.bintray.com/sbuettner/maven')
+
 /**
  * Display drone status icons
  *
@@ -46,8 +48,7 @@ class DroneAggregator {
                     title: it.text()]
         }
 
-        // Break them up into chunks of four-per-row
-        model.put("chunks", guides.collate(4))
+        model.put("guides", guides)
 
         "home"
     }

@@ -8,7 +8,7 @@ drone-aggregator is a [Spring Boot](http://projects.spring.io/spring-boot/) appl
 
 ## Getting Started
 
-You first need to [install Spring Boot](https://github.com/spring-projects/spring-boot#installing-the-cli). I won't show that here because the instructions behind that link are pretty detailed. I'll just assume you got things set up right.
+You first need to [install Spring Boot](http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#getting-started-installing-the-cli). I won't show that here because the instructions behind that link are pretty detailed. I'll just assume you got things set up right.
 
 ## Run the application
 Now you can run the application.

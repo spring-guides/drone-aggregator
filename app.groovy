@@ -21,8 +21,6 @@ package io.spring.guide.drone
 import org.jsoup.nodes.Document
 import org.jsoup.Jsoup
 
-@GrabResolver(name='wro4j', root='http://dl.bintray.com/sbuettner/maven')
-
 /**
  * Display drone status icons
  *

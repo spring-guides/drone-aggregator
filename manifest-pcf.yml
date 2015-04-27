@@ -1,0 +1,7 @@
+---
+# Standard deployment info for CF.
+# NOTE: You don't need this for your own version of this app
+inherit: manifest.yml
+applications:
+- name: drone-aggregator
+  domain: drone-aggregator.architecture.pivotal.io

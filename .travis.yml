@@ -23,3 +23,6 @@ deploy:
   on:
     repo: gregturn/drone-aggregator
     branch: master
+notifications:
+  slack:
+    secure: aN/QqcjMFa31VzcWaMoKGX/Ln5TWsB18fnIbNjS+IYUCgd3tUeiMEBxL/xqBoY73bNj2LFbXUhe4+GqErRfbPGGsqhPtSt+n/pq3ueBn3nQ9EYteRqzxd8tgDZ0SfUPwFJWfUjUHe6beXVJZUZrPYBAXuHYnSbZZnVFgv58ulUo=

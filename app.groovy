@@ -20,6 +20,7 @@ package io.spring.guide.drone
 
 import org.jsoup.nodes.Document
 import org.jsoup.Jsoup
+import org.springframework.boot.context.properties.ConfigurationProperties
 
 /**
  * Display drone status icons
@@ -32,23 +33,67 @@ import org.jsoup.Jsoup
 @Log
 class DroneAggregator {
 
+    @Value('${org:spring-guides}')
+    String org
+
+    @Value('${site:http://spring.io}')
+    String site
+
+    @Value('${css.selector:a.guide--title}')
+    String cssSelector
+
+    @Value('${issue.site:http://issue-aggregator.guides.spring.io/}')
+    String issueSite
+
+    @Autowired
+    Description description
+
     @RequestMapping("/")
     String index(Map<String, Object> model) {
 
-        // Scan for all guides
-        Document doc = Jsoup.connect("http://spring.io/guides").get()
+        def guides = []
 
-        def guides = doc.select("a.guide--title")
-                .findAll { !it.attr("href").contains("tutorials") }
-                .collect {
-            [name: "gs-" + (it.attr("href") - "/guides/gs/" - "/"),
-                    href: it.attr("href"),
-                    title: it.text()]
+        description.sections.each { section ->
+
+            // Scan for all guides
+            Document doc = Jsoup.connect("${site}${section.section}").get()
+
+            guides += doc.select(cssSelector)
+                    .findAll { !it.attr("href").contains("tutorials") }
+                    .collect {
+                        [name: section.prefix + (it.attr("href") - section.toStrip - "/"),
+                        href: it.attr("href"),
+                        title: it.text()]
+            }
+
         }
 
         model.put("guides", guides)
+        model.put("site", site)
+        model.put("org", org)
+        model.put('issueSite', issueSite)
 
         "home"
     }
 
 }
+
+@Component
+@ConfigurationProperties(prefix="description")
+class Description {
+    List<Section> sections
+
+    public String toString() {
+        def results = ""
+        sections.each { results += it.toString() }
+    }
+}
+
+class Section {
+    String prefix
+    String toStrip
+    String section
+
+    public String toString() { "${prefix} ${toStrip} ${section}" }
+}
+

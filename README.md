@@ -1,3 +1,5 @@
+# Drone Aggregator [![Build Status](https://travis-ci.org/gregturn/drone-aggregator.svg?branch=master)](https://travis-ci.org/gregturn/drone-aggregator)
+
 Running more than a handful of CI jobs at http://drone.io? Their usage of screen real estate can leave you scrolling all the time when you really need a quick glance to see if everything is up.
 
 drone-aggregator is a [Spring Boot](http://projects.spring.io/spring-boot/) application that uses [Jsoup](http://jsoup.org) to elegantly grab every [Getting Started Guide](http://spring.io/guides) and construct a slim and trim table with links to each guide as well as its corresponding drone.io job.

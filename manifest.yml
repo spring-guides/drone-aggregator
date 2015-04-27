@@ -6,4 +6,4 @@ applications:
   instances: 1
   host: drone-aggregator
   domain: guides.spring.io
-  path: .
+  path: drone-aggregator.jar

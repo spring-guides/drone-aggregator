@@ -21,7 +21,7 @@ deploy:
   organization: spring.io
   space: Guides
   on:
-    repo: gregturn/drone-aggregator
+    repo: spring-guides/drone-aggregator
     branch: master
 notifications:
   slack:

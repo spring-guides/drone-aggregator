@@ -21,6 +21,8 @@ deploy:
     on:
       repo: spring-guides/drone-aggregator
       branch: master
+    password:
+      secure: AmOPYpd8TtBKPYbkrkIhWcjcRbRtVeP8/kYHfEUIG7L2kqNE4PHxwnso5jFbQGbwWz/pjiHqkaGWrP1hnO9cR2cWoSVF0VlcSK8mWItqd4sNyju5gmrdKnySIkQMx7mQvaSwE6Odko6qicB71V7OpilLc3L0MI/zisWbJByYf1g=
   - provider: cloudfoundry
     edge: true
     api: https://api.run.pivotal.io
@@ -30,8 +32,8 @@ deploy:
     on:
       repo: spring-guides/drone-aggregator
       branch: master
-  password:
-    secure: ibgoXvJIfOWO8VQTXMveNn6Kai//6V8iQBQ1u13sJ07QSFQvLepUXfCSp+qEN6yL/3dZfZeAoccbGGEP/UsQb40+GyOXtmG/YSELqupc7kXfzV/zi91SXyfWCXvtO3cD+3GsI5FGLTzahVJTurWUETuy3KLN0nYeky5/uuivgN8=
+    password:
+      secure: AmOPYpd8TtBKPYbkrkIhWcjcRbRtVeP8/kYHfEUIG7L2kqNE4PHxwnso5jFbQGbwWz/pjiHqkaGWrP1hnO9cR2cWoSVF0VlcSK8mWItqd4sNyju5gmrdKnySIkQMx7mQvaSwE6Odko6qicB71V7OpilLc3L0MI/zisWbJByYf1g=
 notifications:
   slack:
     secure: aN/QqcjMFa31VzcWaMoKGX/Ln5TWsB18fnIbNjS+IYUCgd3tUeiMEBxL/xqBoY73bNj2LFbXUhe4+GqErRfbPGGsqhPtSt+n/pq3ueBn3nQ9EYteRqzxd8tgDZ0SfUPwFJWfUjUHe6beXVJZUZrPYBAXuHYnSbZZnVFgv58ulUo=

@@ -12,12 +12,11 @@ before_install:
 script:
 - ./build
 deploy:
+  matrix:
   - provider: cloudfoundry
     edge: true
     api: https://api.run.pivotal.io
     username: gturnquist@pivotal.io
-    password:
-      secure: SXK6lVPpU9wJVT27y9sxyhVH3vkt7701sJPMOUhc70jgbW9evEB1U96yqCqi4ytNvB1q0iG5mYZFKlzAnT52D2QuPlPEkgvBYjMWvzpCzXJ9hHg6v6vBk2pMwkl0GhF5Wt6evvrmDNvyLE5Ll/niY8MAWFRp1KpuxvCOnYVDGrA=
     organization: spring.io
     space: Guides
     on:
@@ -27,13 +26,13 @@ deploy:
     edge: true
     api: https://api.run.pivotal.io
     username: gturnquist@pivotal.io
-    password:
-      secure: SXK6lVPpU9wJVT27y9sxyhVH3vkt7701sJPMOUhc70jgbW9evEB1U96yqCqi4ytNvB1q0iG5mYZFKlzAnT52D2QuPlPEkgvBYjMWvzpCzXJ9hHg6v6vBk2pMwkl0GhF5Wt6evvrmDNvyLE5Ll/niY8MAWFRp1KpuxvCOnYVDGrA=
     organization: pivotal
     space: pcf-architecture
     on:
       repo: spring-guides/drone-aggregator
       branch: master
+  password:
+    secure: ibgoXvJIfOWO8VQTXMveNn6Kai//6V8iQBQ1u13sJ07QSFQvLepUXfCSp+qEN6yL/3dZfZeAoccbGGEP/UsQb40+GyOXtmG/YSELqupc7kXfzV/zi91SXyfWCXvtO3cD+3GsI5FGLTzahVJTurWUETuy3KLN0nYeky5/uuivgN8=
 notifications:
   slack:
     secure: aN/QqcjMFa31VzcWaMoKGX/Ln5TWsB18fnIbNjS+IYUCgd3tUeiMEBxL/xqBoY73bNj2LFbXUhe4+GqErRfbPGGsqhPtSt+n/pq3ueBn3nQ9EYteRqzxd8tgDZ0SfUPwFJWfUjUHe6beXVJZUZrPYBAXuHYnSbZZnVFgv58ulUo=

@@ -17,7 +17,7 @@ deploy:
   api: https://api.run.pivotal.io
   username: gturnquist@pivotal.io
   password:
-    secure: RQrH4HeZl1736GZ3c/C9+WfbFWrPCuxds8FXOGcJqCmBYNd33vQSuzUgUBxub0glX38ML2X6h3aE8imE0vG9N7/W4/gYomnTyM1U9PMlyE9i2JInOu+xw1JgnrXkBZAXcW8BsEd5NujWpYjOaJs/2br3lyurlXPv+vb1QofVpPQ=
+    secure: SXK6lVPpU9wJVT27y9sxyhVH3vkt7701sJPMOUhc70jgbW9evEB1U96yqCqi4ytNvB1q0iG5mYZFKlzAnT52D2QuPlPEkgvBYjMWvzpCzXJ9hHg6v6vBk2pMwkl0GhF5Wt6evvrmDNvyLE5Ll/niY8MAWFRp1KpuxvCOnYVDGrA=
   organization: spring.io
   space: Guides
   on:

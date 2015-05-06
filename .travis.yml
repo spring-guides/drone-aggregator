@@ -9,31 +9,14 @@ before_install:
 - tar xvfz spring-boot-cli-1.2.3.RELEASE-bin.tar.gz
 - export PATH=$PATH:spring-1.2.3.RELEASE/bin
 - spring --version
+- wget -O cf-linux-amd64.tgz "https://cli.run.pivotal.io/stable?release=linux64-binary&version=6.11.2&source=github-rel"
+- chmod 755 ./cf
 script:
 - ./build
-deploy:
-  - provider: cloudfoundry
-    edge: true
-    api: https://api.run.pivotal.io
-    username: gturnquist@pivotal.io
-    organization: spring.io
-    space: Guides
-    on:
-      repo: spring-guides/drone-aggregator
-      branch: master
-    password:
-      secure: AmOPYpd8TtBKPYbkrkIhWcjcRbRtVeP8/kYHfEUIG7L2kqNE4PHxwnso5jFbQGbwWz/pjiHqkaGWrP1hnO9cR2cWoSVF0VlcSK8mWItqd4sNyju5gmrdKnySIkQMx7mQvaSwE6Odko6qicB71V7OpilLc3L0MI/zisWbJByYf1g=
-  - provider: cloudfoundry
-    edge: true
-    api: https://api.run.pivotal.io
-    username: gturnquist@pivotal.io
-    organization: pivotal
-    space: pcf-architecture
-    on:
-      repo: spring-guides/drone-aggregator
-      branch: master
-    password:
-      secure: AmOPYpd8TtBKPYbkrkIhWcjcRbRtVeP8/kYHfEUIG7L2kqNE4PHxwnso5jFbQGbwWz/pjiHqkaGWrP1hnO9cR2cWoSVF0VlcSK8mWItqd4sNyju5gmrdKnySIkQMx7mQvaSwE6Odko6qicB71V7OpilLc3L0MI/zisWbJByYf1g=
+after_success:
+  "cf auth $CF_USERNAME $CF_PASSWORD"
+  "cf push -f manifest.yml"
+  "cf push -f manifest-pcf.yml"
 notifications:
   slack:
     secure: aN/QqcjMFa31VzcWaMoKGX/Ln5TWsB18fnIbNjS+IYUCgd3tUeiMEBxL/xqBoY73bNj2LFbXUhe4+GqErRfbPGGsqhPtSt+n/pq3ueBn3nQ9EYteRqzxd8tgDZ0SfUPwFJWfUjUHe6beXVJZUZrPYBAXuHYnSbZZnVFgv58ulUo=

@@ -15,14 +15,7 @@ before_install:
 script:
 - ./build
 after_success:
-- if [ "${TRAVIS_PULL_REQUEST}" = "false" && "${TRAVIS_BRANCH}" == "master"]; then
-  - ./cf api https://api.run.pivotal.io # 
-  - ./cf auth $CF_USERNAME $CF_PASSWORD
-  - ./cf target -o spring.io -s Guides
-  - ./cf push -f manifest.yml
-  - ./cf target -o pivotal -s pcf-architecture
-  - ./cf push -f manifest-pcf.yml
-- fi
+- if [ "${TRAVIS_PULL_REQUEST}" = "false" && "${TRAVIS_BRANCH}" == "master"]; then ./deploy ; fi
 notifications:
   slack:
     secure: gmYkjOhLkUAlu2ml4daoSN+iu5dhrjEooeRwKtwNQHTSBLqjNQPw/iJ8yj+sGpaqqTiBtFy/PvbQ3OeOrgp88uCv3YrYCI1M5cHh7OlX/Z4MIdOMpRmJLf8wNnPLcKqzhpII4sjD9R/J/MlqfhpJFqqiikiP5nTVziSQV5VqWU4=

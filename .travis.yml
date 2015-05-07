@@ -15,9 +15,9 @@ before_install:
 script:
 - ./build
 after_success:
-  - cf auth $CF_USERNAME $CF_PASSWORD
-  - cf push -f manifest.yml
-  - cf push -f manifest-pcf.yml
+- ./cf auth $CF_USERNAME $CF_PASSWORD
+- ./cf push -f manifest.yml
+- ./cf push -f manifest-pcf.yml
 notifications:
   slack:
-    secure: aN/QqcjMFa31VzcWaMoKGX/Ln5TWsB18fnIbNjS+IYUCgd3tUeiMEBxL/xqBoY73bNj2LFbXUhe4+GqErRfbPGGsqhPtSt+n/pq3ueBn3nQ9EYteRqzxd8tgDZ0SfUPwFJWfUjUHe6beXVJZUZrPYBAXuHYnSbZZnVFgv58ulUo=
+    secure: gmYkjOhLkUAlu2ml4daoSN+iu5dhrjEooeRwKtwNQHTSBLqjNQPw/iJ8yj+sGpaqqTiBtFy/PvbQ3OeOrgp88uCv3YrYCI1M5cHh7OlX/Z4MIdOMpRmJLf8wNnPLcKqzhpII4sjD9R/J/MlqfhpJFqqiikiP5nTVziSQV5VqWU4=

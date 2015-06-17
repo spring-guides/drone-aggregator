@@ -18,6 +18,5 @@ after_success:
 - if [ "${TRAVIS_PULL_REQUEST}" = "false" -a "${TRAVIS_BRANCH}" = "master" ]; then ./deploy ; fi
 notifications:
   slack:
-    secure: 
-      - gmYkjOhLkUAlu2ml4daoSN+iu5dhrjEooeRwKtwNQHTSBLqjNQPw/iJ8yj+sGpaqqTiBtFy/PvbQ3OeOrgp88uCv3YrYCI1M5cHh7OlX/Z4MIdOMpRmJLf8wNnPLcKqzhpII4sjD9R/J/MlqfhpJFqqiikiP5nTVziSQV5VqWU4=
-      - JFLrt+mLw8wmcuFv7IJQ3msgys9bYyFcThUDJ60OLEmK8F+MUXFBiEiBfN+zSHok1plxSghUZj1bSzAiQ530z0EUa66y2xo6FuBtcVCV+t4lNuhEc9lNaSb2IyQGDv3jlNJrX/nByiB/fT1iv01s4x6z54VjkR+R/iiS3Th1AJ8=
+    - secure: gmYkjOhLkUAlu2ml4daoSN+iu5dhrjEooeRwKtwNQHTSBLqjNQPw/iJ8yj+sGpaqqTiBtFy/PvbQ3OeOrgp88uCv3YrYCI1M5cHh7OlX/Z4MIdOMpRmJLf8wNnPLcKqzhpII4sjD9R/J/MlqfhpJFqqiikiP5nTVziSQV5VqWU4=
+    - secure: JFLrt+mLw8wmcuFv7IJQ3msgys9bYyFcThUDJ60OLEmK8F+MUXFBiEiBfN+zSHok1plxSghUZj1bSzAiQ530z0EUa66y2xo6FuBtcVCV+t4lNuhEc9lNaSb2IyQGDv3jlNJrX/nByiB/fT1iv01s4x6z54VjkR+R/iiS3Th1AJ8=

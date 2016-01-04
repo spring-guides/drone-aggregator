@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package io.spring.guide.drone
+package io.spring.guide.travis
 
 @Grab('org.jsoup:jsoup:1.6.1')
 
@@ -23,7 +23,7 @@ import org.jsoup.Jsoup
 import org.springframework.boot.context.properties.ConfigurationProperties
 
 /**
- * Display drone status icons
+ * Display travis status icons
  *
  * @author Greg Turnquist
  */
@@ -31,7 +31,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties
 @Grab("spring-web")
 @Controller
 @Log
-class DroneAggregator {
+class TravisAggregator {
 
     @Value('${org:spring-guides}')
     String org

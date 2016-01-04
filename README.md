@@ -1,8 +1,8 @@
-# Drone Aggregator [![Build Status](https://travis-ci.org/spring-guides/drone-aggregator.svg?branch=master)](https://travis-ci.org/spring-guides/drone-aggregator)
+# Travis Aggregator [![Build Status](https://travis-ci.org/spring-guides/drone-aggregator.svg?branch=master)](https://travis-ci.org/spring-guides/drone-aggregator)
 
-Running more than a handful of CI jobs at http://drone.io? Their usage of screen real estate can leave you scrolling all the time when you really need a quick glance to see if everything is up.
+Running more than a handful of CI jobs at http://travis-ci.org? Their usage of screen real estate can leave you scrolling all the time when you really need a quick glance to see if everything is up.
 
-drone-aggregator is a [Spring Boot](http://projects.spring.io/spring-boot/) application that uses [Jsoup](http://jsoup.org) to elegantly grab every [Getting Started Guide](http://spring.io/guides) and construct a slim and trim table with links to each guide as well as its corresponding drone.io job.
+travis-aggregator is a [Spring Boot](http://projects.spring.io/spring-boot/) application that uses [Jsoup](http://jsoup.org) to elegantly grab every [Getting Started Guide](http://spring.io/guides) and construct a slim and trim table with links to each guide as well as its corresponding Travis CI job.
 
 > **NOTE:** See http://bit.ly/app-mgmt-tools-with-boot for a webinar that walks through this app.
 
@@ -40,7 +40,7 @@ You should see something like this:
 2014-03-07 22:22:16.008  INFO 35955 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
 2014-03-07 22:22:16.010  INFO 35955 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
 2014-03-07 22:22:18.630  INFO 35955 --- [       runner-0] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2014-03-07 22:22:18.713  INFO 35955 --- [       runner-0] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String io.spring.guide.drone.DroneAggregator.index(java.util.Map<java.lang.String, java.lang.Object>)
+2014-03-07 22:22:18.713  INFO 35955 --- [       runner-0] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String io.spring.guide.travis.TravisAggregator.index(java.util.Map<java.lang.String, java.lang.Object>)
 2014-03-07 22:22:18.755  INFO 35955 --- [       runner-0] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2014-03-07 22:22:18.755  INFO 35955 --- [       runner-0] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2014-03-07 22:22:18.945  INFO 35955 --- [       runner-0] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup

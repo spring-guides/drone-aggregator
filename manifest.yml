@@ -2,8 +2,8 @@
 # Standard deployment info for CF.
 # NOTE: You don't need this for your own version of this app
 applications:
-- name: drone-aggregator
+- name: travis-aggregator
   instances: 1
-  host: drone-aggregator
+  host: travis-aggregator
   domain: guides.spring.io
-  path: drone-aggregator.jar
+  path: travis-aggregator.jar

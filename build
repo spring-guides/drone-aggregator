@@ -2,4 +2,4 @@
 
 ./prebuild
 
- spring jar --exclude='**/bower*,**/bower_components/**,**/.sass-cache/**' drone-aggregator.jar app.groovy 
+ spring jar --exclude='**/bower*,**/bower_components/**,**/.sass-cache/**' travis-aggregator.jar app.groovy 

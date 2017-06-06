@@ -12,7 +12,7 @@
 
     <nav class="layout">
         <div class="layout__item palm-1/1 lap-and-up-1/2">
-            <h1>Travis Aggregator</h1>
+            <h1>Concourse Aggregator</h1>
         </div><!--
             --><div class="layout__item palm-1/1 lap-and-up-1/2">
         <ul class="site-nav__list">
@@ -40,7 +40,7 @@
             --><li th:each="guide : ${guides}" class="layout__item lap-and-up-1/2 desk-1/4">
         <div class="flag flag--tiny">
             <div class="flag__img">
-                <img th:src="@{https://travis-ci.org/__${org}__/__${guide[name]}__.svg?branch=master}" />
+                <img th:src="@{https://ci.spring.io/api/v1/teams/spring-cloud/pipelines/spring-guides-ci/jobs/__${guide[name]}__-maven/badge}" />
             </div>
             <div class="flag__body">
                 <a th:href="@{__${site}____${guide[href]}__}" target="_blank">

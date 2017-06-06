@@ -31,7 +31,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties
 @Grab("spring-web")
 @Controller
 @Log
-class TravisAggregator {
+class ConcourseAggregator {
 
     @Value('${org:spring-guides}')
     String org

@@ -40,8 +40,8 @@
             --><li th:each="guide : ${guides}" class="layout__item lap-and-up-1/2 desk-1/4">
         <div class="flag flag--tiny">
             <div class="flag__img">
-                <img th:src="@{https://ci.spring.io/api/v1/teams/spring-cloud/pipelines/spring-guides-ci/jobs/__${guide[name]}__-maven/badge}" />
-                <img th:src="@{https://ci.spring.io/api/v1/teams/spring-cloud/pipelines/spring-guides-ci/jobs/__${guide[name]}__-gradle/badge}" />
+                <img th:src="@{https://ci.spring.io/api/v1/teams/spring-guides/pipelines/spring-guides-ci/jobs/__${guide[name]}__-maven/badge}" />
+                <img th:src="@{https://ci.spring.io/api/v1/teams/spring-guides/pipelines/spring-guides-ci/jobs/__${guide[name]}__-gradle/badge}" />
             </div>
             <div class="flag__body">
                 <a th:href="@{__${site}____${guide[href]}__}" target="_blank">

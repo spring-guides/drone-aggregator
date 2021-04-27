@@ -40,7 +40,7 @@
             --><li th:each="guide : ${guides}" class="layout__item lap-and-up-1/2 desk-1/4">
         <div class="flag flag--tiny">
             <div class="flag__img">
-                <img th:src="@{https://travis-ci.org/__${org}__/__${guide[name]}__.svg?branch=master}" />
+                <img th:src="@{https://travis-ci.org/__${org}__/__${guide[name]}__.svg?branch=main}" />
             </div>
             <div class="flag__body">
                 <a th:href="@{__${site}____${guide[href]}__}" target="_blank">

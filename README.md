@@ -1,4 +1,4 @@
-# Travis Aggregator [![Build Status](https://travis-ci.org/spring-guides/drone-aggregator.svg?branch=master)](https://travis-ci.org/spring-guides/drone-aggregator)
+# Travis Aggregator [![Build Status](https://travis-ci.org/spring-guides/drone-aggregator.svg?branch=main)](https://travis-ci.org/spring-guides/drone-aggregator)
 
 Running more than a handful of CI jobs at http://travis-ci.org? Their usage of screen real estate can leave you scrolling all the time when you really need a quick glance to see if everything is up.
 

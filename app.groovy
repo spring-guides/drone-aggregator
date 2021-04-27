@@ -36,13 +36,13 @@ class TravisAggregator {
     @Value('${org:spring-guides}')
     String org
 
-    @Value('${site:http://spring.io}')
+    @Value('${site:https://spring.io}')
     String site
 
     @Value('${css.selector:a.guide--title}')
     String cssSelector
 
-    @Value('${issue.site:http://issue-aggregator.guides.spring.io/}')
+    @Value('${issue.site:https://issue-aggregator.guides.spring.io/}')
     String issueSite
 
     @Autowired
